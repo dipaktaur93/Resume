@@ -1,0 +1,139 @@
+ .body{
+     border: 0in;
+     background-color: black;
+ }
+ .main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 300px 700px;
+}
+ .left-section{
+    width: 300px;
+    background-color: rgb(143, 123, 231);
+    
+    grid-area: 1/1/3/2;
+    grid-column: span 1;
+
+}
+.right-section{
+    width: 700px;
+    background-color: rgb(255, 255, 254);
+    /* min-height: 1000px; */
+    grid-area: 1/2/3/3;
+    grid-column: span 1/span 2;
+
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-details{
+    color: white;
+}
+.profile-image{
+    width: 60%;
+    height: auto;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+}
+ .name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+ .designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+div li{
+    display: block;
+    float: left;
+    color: white;
+    width: 25%;
+    text-align: center;
+}
+div li a{
+    color: white;
+}
+.add{
+    width: 100%;
+    text-align: left;
+    line-height: 1.5rem;
+}
+.contact{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    color: white;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+table{
+    border: none;
+    width: 100%;
+}
+.addd{
+    width: 100%;
+    text-align: left;
+    line-height: 1.5rem;
+    color: black;
+}
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+        min-height: 100px;
+        width: 90%;
+    }
+    .left-section{
+        width: 100%;
+        background-color: darkslategrey;
+        display: block;
+    }
+    .right-section{
+        width: 100%;
+        background-color: beige;
+        display: contents;
+    }
+}
